@@ -6,6 +6,9 @@
 //  http://landonf.bikemonkey.org/code/iphone/Using_Blocks_1.20090704.html
 //
 
+#ifndef MCRelease
+#define MCRelease(__POINTER) [__POINTER release], __POINTER = nil
+#endif
 #import "PSAlertView.h"
 
 @implementation PSAlertView
